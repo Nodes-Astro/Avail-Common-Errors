@@ -14,6 +14,12 @@ Rearrenge your path according to your guide which you follow, should be like thi
 ```
 ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain goldberg --name "Moniker"
 ```
+or if you setup your node in home directory should be like this:
+
+```
+ExecStart= /home/"username"/avail/target/release/data-avail --base-path `pwd`/data --chain goldberg --name "Moniker"
+```
+
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/cc526b28-42c5-4b06-92a1-3300074ad388)
 
 If you see this error you should run this commands:
