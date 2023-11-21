@@ -1,5 +1,5 @@
 # Avail-Common-Errors
-Common error solutions for avail node operators
+## Common error solutions for avail node operators
 
 
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/e979eb42-6088-44ed-968c-8b15a1253dba)
@@ -48,7 +48,7 @@ sudo netstat -tulpn | grep avail
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/799a123f-9cfc-4a31-b246-cbb486c53154)
 
 In the example above this node use 35549 to speak TCP in avail so you have to learn yourselves and change it with 9944, so new command should be like this: 
-## Don't change anything if it works by default
+**Don't change anything if it works by default**
 
 ```
 cd avail
