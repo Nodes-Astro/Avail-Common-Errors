@@ -71,6 +71,26 @@ docker exec -it $(docker ps | grep -i availj | awk '{print $NF}') bash -c 'curl 
 
 If you saw same number while download your node looks like stuck don't worry, wait patiently sometimes it caused delay according to your vps providers network traffic. Don't exit, wait until complete.
 
+"Replace the path with your actual data path" error
+This is the error encountered by validators who dropped from active set.
+You should create another folder and run again. 
+
+```
+ cd avail
+systemctl stop availd.service
+mkdir -p output1
+cargo run --locked --release -- --chain goldberg -- validator --d ./output1 
+```
+and open file service and edit the path 
+```
+nano /etc/systemd/system/availd.service
+```
+```
+ExecStart= /root/avail/target/release/data-avail -d ./output1 --chain goldberg --validator --name "yournodename"
+```
+
+
+
 
 
 
