@@ -4,7 +4,7 @@
 
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/e979eb42-6088-44ed-968c-8b15a1253dba)
 
-If you see this error that caused there are something wrong with your systemd file in path section.
+**If you see this error that caused there are something wrong with your systemd file in path section.**
 
 ```
 nano /etc/systemd/system/availd.service
@@ -33,7 +33,7 @@ git checkout v1.8.0.2
 
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/ca00cc92-637c-412e-8730-290128aefdd0)
 
-If you couldn't monitor your cpu usage and network traffic in grafana dashboard you should upgrade your grafana and prometheus to the latest versions:
+**If you couldn't monitor your cpu usage and network traffic in grafana dashboard you should upgrade your grafana and prometheus to the latest versions:**
 
 ```
 sudo apt-get upgrade -y prometheus prometheus-node-exporter
@@ -41,7 +41,7 @@ sudo apt-get upgrade -y grafana
 ```
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/f91bc93c-82f5-44cc-99b7-955bd5bebdfc)
 
-If you see connection refused error try:
+**If you see connection refused error try:**
 
 ```
 sudo ufw allow 9944
@@ -69,9 +69,9 @@ docker exec -it $(docker ps | grep -i availj | awk '{print $NF}') bash -c 'curl 
 
 ![image](https://github.com/Alping0/Avail-Common-Errors/assets/105454859/4bd72a8b-6678-43d9-affd-b59f7459b718)
 
-If you saw same number while download your node looks like stuck don't worry, wait patiently sometimes it caused delay according to your vps providers network traffic. Don't exit, wait until complete.
+**If you saw same number while download your node looks like stuck don't worry, wait patiently sometimes it caused delay according to your vps providers network traffic. Don't exit, wait until complete.**
 
-"Replace the path with your actual data path" error
+**"Replace the path with your actual data path" error**
 This is the error encountered by validators who dropped from active set.
 You should create another folder and run again. 
 
